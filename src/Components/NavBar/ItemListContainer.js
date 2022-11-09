@@ -1,8 +1,8 @@
 import React from "react"
-import NavBar from "./NavBar";
+import Header from "./Header";
 const ItemListContainer = () =>{
     return (<div> 
-           <NavBar greeting = {"Hola mundo"}/>
+           <Header greeting = {"Course"}/>
             </div>)
 }
 

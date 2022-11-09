@@ -1,13 +1,11 @@
-import logo from './logo.svg';
-import React from "react"
+import React from "react";
 import './App.css';
-import "./Components/NavBar/NavBar";
-import "./Components/NavBar/ItemListContainer";
+import ItemListContainer from "../src/Components/NavBar/ItemListContainer";
 function App() {
   return (
     <div className="App">
       <main>
-        <ItemListContainer></ItemListContainer>
+        <ItemListContainer/>
       </main>
       <header className="App-header">
       

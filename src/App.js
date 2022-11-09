@@ -7,7 +7,7 @@ function App() {
     <div className="App">
       <main>
         <Header/>
-        <ItemListContainer/>
+        <ItemListContainer greeting="Course"/>
       </main>
       <header className="App-header">
       

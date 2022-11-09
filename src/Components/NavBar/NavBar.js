@@ -1,3 +1,4 @@
+import React from "react"
 import CartWidget from "../CartWidget";
 import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
@@ -18,7 +19,7 @@ const NavBar = () =>{
           <br />
           <Navbar bg="primary" variant="dark">
             <Container>
-              <Navbar.Brand href="#home">{CartWidget}</Navbar.Brand>
+              <Navbar.Brand href="#home"><CartWidget/></Navbar.Brand>
               <Nav className="me-auto">
                 <Nav.Link href="#home">Home</Nav.Link>
                 <Nav.Link href="#features">Features</Nav.Link>

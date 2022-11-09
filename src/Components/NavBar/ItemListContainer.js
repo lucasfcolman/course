@@ -1,8 +1,7 @@
 import React from "react"
-import Header from "./Header";
-const ItemListContainer = () =>{
+const ItemListContainer = ({greeting}) =>{
     return (<div> 
-           <Header greeting = {"Course"}/>
+           <ItemListContainer greeting = {"Course"}/>
             </div>)
 }
 

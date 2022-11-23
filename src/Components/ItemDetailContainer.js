@@ -1,6 +1,3 @@
-import React from "react"
-import { useState } from "react";
-import ItemList from "../itemList";
 const productos = [
     {
       id :"1",
@@ -33,10 +30,5 @@ const ItemListContainer = ({greeting}) =>{
     }, 3000 )
     );
 
-    productList.then ((data) => setProducts (data));
-    return (<div> 
-            <ItemList />
-            </div>);
-};
 
-export default ItemListContainer;
+    export default ItemDetailContainer;

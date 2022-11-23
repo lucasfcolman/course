@@ -6,6 +6,10 @@ const ItemListContainer = () =>{
     return (
         <div>
             <itemList/>
+            <div>
+            <productList/>
+            </div>
+            
         </div> 
            )
 }

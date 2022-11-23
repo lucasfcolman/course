@@ -1,5 +1,6 @@
 import React from "react"
 import { useState } from "react";
+import ItemDetailContainer from "../ItemDetailContainer";
 import ItemList from "../itemList";
 const productos = [
     {
@@ -24,19 +25,15 @@ const productos = [
       img : "https://i.imgur.com/XK6QMms.jpeg",
     },
   ];
-  
-const ItemListContainer = ({greeting}) =>{
-    const {products, setProducts} = useState ([]);
-    const productList = new Promise ((resolve)=>
-    setTimeout(()=>{
-    resolve(productos);
-    }, 3000 )
-    );
+const ItemListContainer = () =>{
+    return (
+        <div> 
+            <ItemDetailContainer/>
+        </div> 
+           )
+}
 
-    productList.then ((data) => setProducts (data));
-    return (<div> 
-            <ItemList />
-            </div>);
-};
+    
+
 
 export default ItemListContainer;

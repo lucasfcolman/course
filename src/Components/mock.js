@@ -22,35 +22,11 @@ const productos = [
     },
   ];
   
-const data = () =>{
-    const {products, setProducts} = useState ([]);
-    const productList = new Promise ((resolve)=>
+    export const productList = new Promise ((resolve)=>
     setTimeout(()=>{
-    resolve(products);
+    resolve(productos);
     }, 3000 )
     );
 
-    productList.then ((data) => setProducts (data));
-    return (<div> 
-            <ItemList />
-            </div>);
-};
 
-
-    const info = () =>{
-        const [showInfo, setShowInfo] = useState (true);
-        const hideOrShowInfo = () => {
-            setShowInfo (!showInfo);
-        };
-        return  (
-            <main>
-                <div>
-                <button onClick={hideOrShowInfo}>
-                    {showInfo ? "Ocultar" : "Mostrar"} info
-                </button>
-                </div>
-                 </main>
-        )
-    }
-
-    export default Mock;
+    export default productos;
